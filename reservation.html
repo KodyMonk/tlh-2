@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Texas Longhorn - Bahrain</title>
+    <style>
+        .banner{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+    box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.1);
+
+}
+.card-img{
+    background: url("/images/int-1.jpg") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+    </style>
+</head>
+<body>
+<header>
+<!-- Logo -->
+    <a href="#" class="logo">
+        <img src="/images/texas-logo-v2.png" alt="">
+    </a>
+    <a href="#" class="logo-default">
+        <img src="/images/logo.png" alt="">
+    </a>
+<!-- Logo Ends -->
+    <label for="toggle" class="toggle-btn">&#9776;</label>
+    <input type="checkbox" id="toggle">
+    <ul class="nav-links ">
+        <div class="icon cancel-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <li><a href="/">Home</a></li>
+        <li><a href="/menu.html">Menu</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/reservation.html" class="active">Reservation</a></li>
+    </ul>
+</header>
+
+<section class="page-title-section">
+    <div class="page-title">
+        <div class="container flex-me jc">
+            <h1>Reservation</h1>
+        </div>
+    </div>
+</section>
+<div class="r-grid container">
+    <section class = "banner">
+        <h2>BOOK YOUR TABLE NOW</h2>
+        <div class = "card-container">
+            <div class = "card-img">
+                <!-- image here -->
+            </div>
+
+            <div class = "card-content">
+                <h3>Reservation</h3>
+                <form>
+                    <div class = "form-row">
+                        <select name = "days">
+                            <option value = "day-select">Select Day</option>
+                            <option value = "sunday">Sunday</option>
+                            <option value = "monday">Monday</option>
+                            <option value = "tuesday">Tuesday</option>
+                            <option value = "wednesday">Wednesday</option>
+                            <option value = "thursday">Thursday</option>
+                            <option value = "friday">Friday</option>
+                            <option value = "saturday">Saturday</option>
+                        </select>
+
+                        <select name = "hours">
+                            <option value = "hour-select">Select Hour</option>
+                            <option value = "10">10: 00</option>
+                            <option value = "10">12: 00</option>
+                            <option value = "10">14: 00</option>
+                            <option value = "10">16: 00</option>
+                            <option value = "10">18: 00</option>
+                            <option value = "10">20: 00</option>
+                            <option value = "10">22: 00</option>
+                        </select>
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "text" placeholder="Full Name">
+                        <input type = "text" placeholder="Phone Number">
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "number" placeholder="How Many Persons?" min = "1">
+                        <input type = "submit" value = "BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</section>
+<footer>
+    <div class="footer-grid container">
+        <div class="footer-about">
+            <h4 class="footer-title">About</h4>
+            <img src="/images/texas-white-logo.png" alt="">
+            <p>Texas Longhorn, the stylish & sophisticated destination
+                for an indulgent barbecue experience in
+                Bahrain is finally next to you at Adliya Bahrain.</p>
+
+        </div>
+        <div class="footer-links">
+            <h4 class="footer-title">Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact-info">
+            <h4 class="footer-title">Contact</h4>
+            <div class="el">
+                <i class="fas fa-phone-alt"></i> <span>+973 3205 9999</span>
+            </div>
+            <div class="el">
+                <i class="far fa-envelope"></i> <span>info@texaslonghorn.com</span>
+            </div>
+            <div class="el">
+                <i class="fas fa-map-marker-alt"></i> <span>Building 571, Road 3819, Block 338, Adliya, Bahrain</span>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <h4 class="footer-title">Socials</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="bottom-bar">
+    <div class="copy">
+        © Copyright 2021 - Texas Longhorn Bahrain
+    </div>
+</div>
+<script src="/js/app.js"></script>
+</body>
+</html>
